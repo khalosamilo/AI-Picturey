@@ -39,7 +39,7 @@ function App() {
     </>
   ) : (
     <>
-      <h2>Mahmood pics</h2>
+      <h2>AI-Picturey</h2>                            
       <div className="textarea-container">
         <textarea
           className="app-input"
