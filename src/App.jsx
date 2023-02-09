@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [placeholder, setPlaceholder] = useState(
-    "Search Bears with Paint Brushes the Starry Night, painted by Vincent Van Gogh.."
+    "Search Bears with Paint Brushes the Starry Night, painted by Vincent Van Gogh.."   //you can write anything here
   );
   const configuration = new Configuration({
     apiKey: import.meta.env.VITE_Open_AI_Key,
@@ -47,10 +47,10 @@ function App() {
           onChange={(e) => setPrompt(e.target.value)}
         />
       </div>
-      <div className="button-container">
-        <button className="solver-btn">
-          <a href="https://mahmood-solver.netlify.app" target="_blank">⫷solver</a>
-        </button>
+      //<div className="button-container">
+      //  <button className="solver-btn">
+      //    <a href="https://your-solver.netlify.app" target="_blank">⫷solver</a>
+      //  </button>
         <button className="generate-btn" onClick={generateImage}>Generate</button>
       </div>
       {result.length > 0 ? (
