@@ -47,10 +47,10 @@ function App() {
           onChange={(e) => setPrompt(e.target.value)}
         />
       </div>
-      //<div className="button-container">
-      //  <button className="solver-btn">
-      //    <a href="https://your-solver.netlify.app" target="_blank">⫷solver</a>
-      //  </button>
+      <div className="button-container">
+        <button className="solver-btn">
+          <a href="https://your-example-solver.netlify.app.example" target="_blank">⫷solver</a>
+        </button>
         <button className="generate-btn" onClick={generateImage}>Generate</button>
       </div>
       {result.length > 0 ? (
